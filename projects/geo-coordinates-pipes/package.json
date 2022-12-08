@@ -1,6 +1,29 @@
 {
   "name": "@linch90/geo-coordinates-pipes",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "homepage": "https://www.unihanlin.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unihanlin/flight-time-sup-pipe.git"
+  },
+  "author": {
+    "name": "linch90;晗林科技",
+    "email": "chuzhilin@unihanlin.com"
+  },
+  "description": "Latitude, Longitude and Magnetic variation pipes for angular.",
+  "keywords": [
+    "angular",
+    "ng",
+    "geo",
+    "geographic",
+    "coordinates",
+    "latitude",
+    "longitude",
+    "magnetic variation",
+    "pipes",
+    "library"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0"

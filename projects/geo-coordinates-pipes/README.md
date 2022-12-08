@@ -1,24 +1,43 @@
 # GeoCoordinatesPipes
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+Angular pipes to display coordinates(latitude and longitude), magnetic variation nicely.
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name --project geo-coordinates-pipes` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project geo-coordinates-pipes`.
-> Note: Don't forget to add `--project geo-coordinates-pipes` or else it will be added to the default project in your `angular.json` file. 
+The pipes are in the _@linch90/geo-coordinates-pipes_ package, here is how you import them in your Angular module:
 
-## Build
+```typescript
+import { GeoCoordinatesPipesModule } from "@linch90/geo-coordinates-pipes";
 
-Run `ng build geo-coordinates-pipes` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+  imports: [
+    // other imports
+    GeoCoordinatesPipesModule,
+  ],
+  // rest of the module metadata
+})
+export class YourModule {}
+```
 
-## Publishing
+## Usage
 
-After building your library with `ng build geo-coordinates-pipes`, go to the dist folder `cd dist/geo-coordinates-pipes` and run `npm publish`.
+```html
+<p>{{ 45.135 | latitute }}</p>
+<!-- 45° 08' 06" N -->
+<p>{{ -19.37555556 | latitute }}</p>
+<!-- 19° 22' 32" S -->
+```
 
-## Running unit tests
+```html
+<p>{{ 121.135 | longitude }}</p>
+<!-- 121° 08' 06" E -->
+<p>{{ -19.37555556 | longitude }}</p>
+<!-- 019° 22' 32" W -->
+```
 
-Run `ng test geo-coordinates-pipes` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```html
+<p>{{ 5.135 | magneticVariation }}</p>
+<!-- 05° 08' 06" E -->
+<p>{{ -1.37555556 | magneticVariation }}</p>
+<!-- 01° 22' 32" W -->
+```
