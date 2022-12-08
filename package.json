@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "build": "ng build @linch90/geo-coordinates-pipes --configuration production",
     "build:app": "npm run symlink:copy -- --no-watch && ng build dev-app --configuration production",
     "symlink:copy": "symlink copy --angular --packages @linch90/geo-coordinates-pipes --configuration production",
@@ -40,6 +39,7 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^14.2.0",
+    "puppeteer": "^19.4.0",
     "typescript": "~4.7.2"
   }
 }
