@@ -1,6 +1,6 @@
 {
   "name": "@linch90/geo-coordinates-pipes",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "homepage": "https://www.unihanlin.com",
   "repository": {
     "type": "git",
@@ -25,11 +25,11 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0"
+    "@angular/common": ">=16",
+    "@angular/core": ">=16"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.1.0"
   },
   "publishConfig": {
     "access": "public"
